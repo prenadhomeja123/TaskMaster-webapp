@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url('https://wallpapercave.com/wp/wp9338455.jpg'); /* Replace with your image file path */
+        background-size: 100% 100%; /* Cover the entire body element */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .team-collaboration {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.1
+        ); /* Semi-transparent white background */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for the container */
+      }
+
+      .text-white {
+        color: white; /* White text color */
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      select.form-control {
+        width: 100%;
+        padding: 5px;
+      }
+
+      .btn-primary {
+        background-color: #007bff; /* Blue button background color */
+        color: #fff; /* White button text color */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Team Collaboration Section -->
+    <section class="team-collaboration">
+      <h3 class="text-white">Team Collaboration</h3>
+      <p class="text-white">
+        Collaborate effectively with your team by assigning and managing tasks
+        within a shared workspace.
+      </p>
+      <h4 class="text-white">Collaborate with:</h4>
+
+      <!-- Team Selection -->
+      <div class="form-group">
+        <label for="team" class="text-white">Select Team:</label>
+        <select class="form-control" id="team">
+          <option>Team A</option>
+          <option>Team B</option>
+          <option>Team C</option>
+        </select>
+      </div>
+
+      <!-- Team Member Selection -->
+      <div class="form-group">
+        <label for="teamMember" class="text-white">Select Team Member:</label>
+        <select class="form-control" id="teamMember">
+          <option>User 1</option>
+          <option>User 2</option>
+          <option>User 3</option>
+        </select>
+      </div>
+
+      <!-- Button to initiate collaboration -->
+      <button id="startCollaboration" class="btn btn-dark">
+        Start Collaboration
+      </button>
+    </section>
+  </body>
+</html>
